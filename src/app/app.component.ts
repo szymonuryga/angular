@@ -9,17 +9,20 @@ import { Track } from './track';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'spotify-app';
 
+  title = 'spotify-app';
+ 
   public tracks!: Track[];
 
   ngOnInit(){
-    this.getTrackcss();
+    this.getTracksByAuthor();
   }
+
+ 
 
   constructor(private spotifyService: SpotifyService){}
   
-  public getTrackcss(): void {
+  public getTracksByAuthor(): void {
     this.spotifyService.getTracks().subscribe(
       (response: Track[]) => {
         this.tracks=response;

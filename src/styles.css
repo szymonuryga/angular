@@ -7,3 +7,46 @@ body{
     justify-content: center;
     align-items: center;
 }
+.header{
+    font-size: 28px;
+    background-color: transparent;
+    margin-bottom: 50px;
+    padding: 13px 0;
+    color: grey;
+    text-align: center;
+}
+.main{
+    width: 70%;
+    color: white;
+}
+
+.inputData{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    text-align: center;
+}
+.inputData input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 95%;
+    margin: 0 10px;
+}
+.inputData button{
+    width: 30%;
+    background: none;
+    border: 2px solid #fff;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 60px;
+    align-content: center;
+}

@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+  <main class="main">
+    <div class="header"> <h1>{{appName}}</h1></div>
+
+    <div class="inputData">
+        <input type="text" [(ng-model)]="artistName" placeholder="Artist" >
+        <button ng-click="addTracks(artistName)">Wyszukaj</button>
+    </div>
   <app-root></app-root>
+</main>
+    
 </body>
 </html>
